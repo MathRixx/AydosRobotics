@@ -1,0 +1,68 @@
+﻿@using AydosRobotics_WEB.Models
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
+<!-- Contact -->
+<div id="contact" class="form-1 bg-gray">
+    <div class="container">
+        <div class="row contact-information">
+            <div class="col-lg-4">
+                <div class="contact-item">
+                    <i class="fa fa-phone"></i>
+                    <h4>@Localizer["Phone"]</h4>
+                    <p>@Localizer["PhoneText"]</p>
+                    <a href="tel:">+90 506 603 48 18</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-item">
+                    <i class="fa fa-envelope"></i>
+                    <h4>@Localizer["EMail"]</h4>
+                    <p>@Localizer["EMailText"]</p>
+                    <a href="mailto:info@aydosrobotics.org">info@aydosrobotics.org</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-item">
+                    <i class="fa fa-map-marker"></i>
+                    <h4>@Localizer["Location"]</h4>
+                    <p>Yenişehir, Gülsevin Sk. No:3, 34912 Pendik/İstanbul</p>
+                    <a href="https://maps.app.goo.gl/T6vUuuebJJa3zdGM6">@Localizer["GoogleMaps"]</a>
+                </div>
+            </div>
+        </div>
+        <!-- Section Divider -->
+        <div class="container" style="margin-top: 6.25rem;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr class="section-divider">
+                </div>
+            </div>
+        </div>
+        <!-- End Of Section Divider -->
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <h2>@Localizer["ContactForm"]</h2>
+                <p class="p-heading">@Localizer["ContactText"]</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="cname" required>
+                        <label class="label-control" for="cname">@Localizer["Contact1"]</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control-input" id="cemail" required>
+                        <label class="label-control" for="cemail">@Localizer["Contact2"]</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">@Localizer["Contact3"]</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button">@Localizer["Contact4"]</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Of Contact -->

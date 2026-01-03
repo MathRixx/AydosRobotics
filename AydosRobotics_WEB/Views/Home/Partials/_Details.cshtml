@@ -1,0 +1,25 @@
+﻿@using AydosRobotics_WEB.Models
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
+<!-- Details -->
+<div class="split">
+    <div class="area-1">
+    </div><div class="area-2 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Text Container -->
+                    <div class="text-container">
+                        @Html.Raw(Localizer["Details"])
+                        <div class="icons-container">
+                            <img src="~/images/competitions/reefscape.png" alt="reefscape">
+                            <img src="~/images/competitions/crescendo.png" alt="crescendo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Of details -->

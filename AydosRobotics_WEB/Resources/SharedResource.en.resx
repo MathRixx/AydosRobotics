@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUs" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Contact1" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="Contact2" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="Contact3" xml:space="preserve">
+    <value>Your Message</value>
+  </data>
+  <data name="Contact4" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ContactForm" xml:space="preserve">
+    <value>Contact Form</value>
+  </data>
+  <data name="ContactText" xml:space="preserve">
+    <value>You can reach us by filling out the form below. We carefully review all messages and respond as soon as possible.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>We are an FRC team consisting of high school students passionate about robotics and experienced mentors, working together to create and innovate.</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>&lt;h2&gt;FRC Competitions We Participated In&lt;/h2&gt;
+&lt;p&gt;Every year, we take part in themed competitions organized under the FIRST Robotics Competition. These events require not only technical expertise but also team spirit, strategic thinking, and effective time management.&lt;/p&gt;
+
+&lt;h5&gt;2025 - Reefscape&lt;/h5&gt;
+&lt;p&gt;In this season, which featured tasks representing underwater life, we successfully prepared our robot and competed.&lt;/p&gt;
+
+&lt;h5&gt;2024 - Crescendo&lt;/h5&gt;
+&lt;p&gt;Building on the experience we gained in previous seasons, we became a stronger and more coordinated team in this season.&lt;/p&gt;
+</value>
+  </data>
+  <data name="Elektronik" xml:space="preserve">
+    <value>ELECTRONICS</value>
+  </data>
+  <data name="ElektronikText" xml:space="preserve">
+    <value>This team is responsible for the installation and testing of sensors, motors, and electrical circuits.</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="EMailText" xml:space="preserve">
+    <value>You may share your questions, suggestions, or collaboration requests with us.</value>
+  </data>
+  <data name="Footer" xml:space="preserve">
+    <value>You can follow us on social media to learn more about our team. ©Team 9451 Aydos Robotics 2025</value>
+  </data>
+  <data name="GoogleMaps" xml:space="preserve">
+    <value>View on Google Maps</value>
+  </data>
+  <data name="Heading" xml:space="preserve">
+    <value>We are an FRC team composed of high school students passionate about robotics and experienced mentors, working together to create and innovate.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>Main Page</value>
+  </data>
+  <data name="Mekanik" xml:space="preserve">
+    <value>MECANICS</value>
+  </data>
+  <data name="MekanikText" xml:space="preserve">
+    <value>The design and production of the robot’s chassis, drive system, and task mechanisms are carried out by this team.</value>
+  </data>
+  <data name="OurRobots" xml:space="preserve">
+    <value>Robots</value>
+  </data>
+  <data name="OurTeamText" xml:space="preserve">
+    <value>We work within our team through specialized sub-teams. Each student takes on responsibilities according to their interests and skills, allowing them to grow and develop.</value>
+  </data>
+  <data name="OurTeamTitle" xml:space="preserve">
+    <value>What We Do in Our Team</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PhoneText" xml:space="preserve">
+    <value>You can contact us for any questions or inquiries. We will get back to you as soon as possible.</value>
+  </data>
+  <data name="RobotBottom" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Robot:&lt;/strong&gt;&lt;br&gt; 2025 Reefscape Robot&lt;br&gt;&lt;strong&gt;Description:&lt;/strong&gt;&lt;br&gt; Our robot, designed to perform underwater tasks, has demonstrated high performance in both autonomous and manual modes.&lt;/p&gt;
+</value>
+  </data>
+  <data name="RobotHeading" xml:space="preserve">
+    <value>As a team, we develop robot designs, technical solutions, and competition-specific strategies. Here are the robots we are currently working on:</value>
+  </data>
+  <data name="Robots" xml:space="preserve">
+    <value>Robots</value>
+  </data>
+  <data name="Sponsors" xml:space="preserve">
+    <value>Our Sponsors</value>
+  </data>
+  <data name="SponsorsText" xml:space="preserve">
+    <value>We would like to thank all institutions and organizations that have contributed to the development of our team.</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Our Team</value>
+  </data>
+  <data name="WhoWeAre" xml:space="preserve">
+    <value>We are the AYDOS FRC Team, a community of high school students at Pendik Science and Art Center who aim to develop their skills in engineering, software, and teamwork. Every year, we design, build, and compete with robots based on changing themes. Our goal is not only to compete but also to learn, create, and shape the future.</value>
+  </data>
+  <data name="Yazılım" xml:space="preserve">
+    <value>SOFTWARE</value>
+  </data>
+  <data name="YazılımText" xml:space="preserve">
+    <value>The software required for the robot’s autonomous and driver-controlled tasks is programmed by this team.</value>
+  </data>
+</root>

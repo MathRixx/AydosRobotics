@@ -1,0 +1,125 @@
+﻿@using AydosRobotics_WEB.Models
+@using Microsoft.Extensions.Localization
+@using System.Globalization
+@inject IStringLocalizer<SharedResource> Localizer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="@Localizer["Description"]">
+    <meta name="author" content="Aydos Robotics">
+
+    <!-- OG Meta Tags -->
+    <meta property="og:site_name" content="aydosrobotics" />
+    <meta property="og:site" content="aydosrobotics.org" />
+    <meta property="og:title" content="Aydos Robotics" />
+    <meta property="og:description" content="@Localizer["Description"]" />
+
+    <!-- Webpage Title -->
+    <title>Aydos Robotics</title>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="~/css/bootstrap.css" rel="stylesheet">
+    <link href="~/css/fontawesome-all.css" rel="stylesheet">
+    <link href="~/css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Aydos Robotics" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="~/images/logos/logo.svg" alt="alternative"></a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">@Localizer["MainPage"]<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">@Localizer["AboutUs"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#services">@Localizer["Team"]</a>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">@Localizer["Contact"]</a>
+                    </li>
+                    @{
+                        var culture = CultureInfo.CurrentCulture.Name;
+
+                        if (culture == "tr")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link page-scroll" asp-controller="Home" asp-action="Index" asp-route-culture="en"> <img src="~/images/flags/USA.png" height="15px" alt="en" /></a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link page-scroll" asp-controller="Home" asp-action="Index" asp-route-culture="tr"> <img src="~/images/flags/TR.png" height="15px" alt="tr" /></a>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="~/images/logos/logo.svg" alt="Aydos Robotics Logo" class="logo" />
+            <p>@Localizer["Footer"]</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/aydosfrc/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-box">
+                <h4>@Localizer["Pages"]</h4>
+                <ul>
+                    <li><a href="#header" class="page-scroll">@Localizer["MainPage"]</a></li>
+                    <li><a href="#about" class="page-scroll">@Localizer["AboutUs"]</a></li>
+                    <li><a href="#services" class="page-scroll">@Localizer["Robots"]</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4>@Localizer["Contact"]</h4>
+                <ul>
+                    <li><a href="mailto:info@aydosrobotics.org"><i class="fas fa-envelope"></i> info@aydosrobotics.org</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Of Footer-->
+    <!-- Scripts -->
+    <script src="~/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="~/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="~/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="~/js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿@using AydosRobotics_WEB.Models
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
+<!-- Header -->
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h1 class="h1-large">@Localizer["Heading"]</h1>
+                    <a class="btn-solid-lg page-scroll" href="#about">@Localizer["AboutUs"]</a>
+                    <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>@Localizer["ContactUs"]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Of Header -->

@@ -1,0 +1,32 @@
+﻿@using AydosRobotics_WEB.Models
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
+<!-- Projects -->
+<div id="projects" class="basic-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="h2-heading">@Localizer["OurRobots"]</h2>
+                <p class="p-heading">@Localizer["RobotHeading"]</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="text-container" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <div class="image-container">
+                        <img class="img-fluid" src="~/images/reefscape/reefscape-robot.png" alt="robot-reefscape" style="height:300px">
+                    </div>
+                    <div class="image-container">
+                        <img class="img-fluid" src="~/images/reefscape/reefscape-robot1.png" alt="robot-reefscape" style="height:300px">
+                    </div>
+                    <div class="image-container">
+                        <img class="img-fluid" src="~/images/reefscape/reefscape-robot2.png" alt="robot-reefscape" style="height:300px">
+                    </div>
+                </div>
+                @Html.Raw(Localizer["RobotBottom"])
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Of Projects -->
